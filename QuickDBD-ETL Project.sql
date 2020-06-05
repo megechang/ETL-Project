@@ -5,7 +5,7 @@
 
 CREATE TABLE "Streaming" (
     "Title" VARCHAR   NOT NULL,
-    "Year" date   NOT NULL,
+    "Year" int   NOT NULL,
     "Age" VARCHAR   NOT NULL,
     "IMDB_rating" float   NOT NULL,
     "Rotten_Tomatoes" VARCHAR   NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE "Streaming" (
 
 CREATE TABLE "IMDB" (
     "Title" VARCHAR   NOT NULL,
-    "Year" date   NOT NULL,
+    "Year" int   NOT NULL,
     "Genre" VARCHAR   NOT NULL,
     "Duration" int   NOT NULL,
     "Country" VARCHAR   NOT NULL,
