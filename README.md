@@ -11,12 +11,14 @@ Steps taken:
 2.	Run ETL process once the database is configured. 
 
 EXTRACT:
+
 First, the following datasets were loaded. CSV files are in the Resources folder
 
 1.	MoviesOnStreamingPlatforms_updated.csv - source kaggle.com - https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hulu-and-disney
 2.	IMDB movies.csv - source kaggle.com - https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset?select=IMDb+movies.csv
 
 TRANSFORM:
+
 1.	Streaming Data:
  •	remove all unnecessary columns (determined during the schema creation)
  •	drop any rows that have data missing (NaN values)
@@ -25,6 +27,7 @@ TRANSFORM:
  •	drop any rows that have data missing (NaN values)
 
 LOAD:
+
 Since the tables have been precreated in PostgreSQL, loading of the data can happen only once (or primary keys will be violated). A test query combining all tables shows it worked correctly.
 
 For the full picture, see below:
