@@ -34,6 +34,6 @@ CREATE TABLE "IMDB" (
      )
 );
 
-ALTER TABLE "Streaming" ADD CONSTRAINT "fk_Streaming_Title_S_Released_Year_Runtime" FOREIGN KEY("Title_S", "Released_Year", "Runtime")
-REFERENCES "IMDB" ("Title_I", "Year_Released", "Duration");
+ALTER TABLE "IMDB" ADD CONSTRAINT "fk_IMDB_Title_I" FOREIGN KEY("Title_I")
+REFERENCES "Streaming" ("Title_S");
 
