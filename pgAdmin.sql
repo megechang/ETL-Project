@@ -1,6 +1,6 @@
 CREATE TABLE Streaming (
     Title VARCHAR   NOT NULL,
-    Year_Released date   NOT NULL,
+    Year_Released int   NOT NULL,
     Age VARCHAR   NOT NULL,
     IMDB_rating float   NOT NULL,
     Rotten_Tomatoes VARCHAR   NOT NULL,
@@ -11,14 +11,14 @@ CREATE TABLE Streaming (
     Director VARCHAR   NOT NULL,
     Country VARCHAR   NOT NULL,
     Language_Spoken VARCHAR   NOT NULL,
-    Runtime int   NOT NULL,
+    Runtime float   NOT NULL,
 	CONSTRAINT pk_Streaming PRIMARY KEY (
 		Title, Year_Released, Runtime)
 );
 
 CREATE TABLE IMDB (
     Title VARCHAR   NOT NULL,
-    Year_Released date   NOT NULL,
+    Year_Released int   NOT NULL,
     Genre VARCHAR   NOT NULL,
     Duration int   NOT NULL,
     Country VARCHAR   NOT NULL,
