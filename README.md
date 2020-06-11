@@ -28,6 +28,7 @@ LOAD:
 Since the tables have been precreated in PostgreSQL, loading of the data can happen only once (or primary keys will be violated). A test query combining all tables shows it worked correctly.
 
 For the full picture, see below:
+
 ![alt text](https://github.com/megechang/ETL-Project/blob/master/ProjectOverview.png) 
 
 
